@@ -1,0 +1,46 @@
+input[type="file"] {
+  background: #000000;
+}
+
+.ks-btn-fb {
+  .button-variant(#fff, @ks-fb-bg, darken(@ks-fb-bg, 5%));
+}
+
+.ks-btn-gp {
+  .button-variant(#fff; @ks-gp-bg; darken(@ks-gp-bg, 5%));
+}
+
+.ks-btn-lbl {
+  &:before {
+    content: @fa-var-facebook;
+    border-right: 0.075em solid rgba(0, 0, 0, 0.1);
+    float: left;
+    font: 170% FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    margin: .15em 0.5em -0.5em 0;
+    padding: 0 .5em 0 1em;
+    text-align: bottom;
+    text-decoration: none;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.ks-gp-lbl {
+  &:before {
+    content: @fa-var-google-plus;
+    border-right: 0.075em solid rgba(0, 0, 0, 0.1);
+    float: left;
+    font: 150% FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0 0.5em 0 0;
+    padding: 0 .5em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    vertical-align: -20px;
+    -webkit-font-smoothing: antialiased;
+  }
+}

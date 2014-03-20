@@ -1,0 +1,180 @@
+/*
+ * Created by Rekindl Org
+ * User: Bo Coughlin
+ * Date: 10/28/13
+ * Time: 11:24 PM
+ */
+
+/****************************************
+* Universal                             *
+ ****************************************/
+.tinted-image {
+    background-size: contain;
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url(img/man-bible.png) no-repeat 0px 0px, top left;
+}
+
+/****************************************
+* Animation                             *
+ ****************************************/
+.ks-std-header {
+    position: fixed;
+    border-width: 2px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    height: 230px;
+    overflow: hidden;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    transition: height 0.3s;
+}
+
+.ks-std-header .ks-std-inner {
+    width: 90%;
+    max-width: 69em;
+    margin: 0 auto;
+    padding: 0 1.875em;
+}
+
+.ks-std-header h1,
+.ks-std-header nav {
+    display: inline-block;
+    position: relative;
+}
+
+.ks-std-header h1,
+.ks-std-header nav a {
+    line-height: 230px;
+}
+
+.ks-std-header h1 {
+    text-transform: uppercase;
+    color: #333;
+    letter-spacing: 4px;
+    font-size: 4em;
+    margin: 0;
+    float: left;
+}
+
+.ks-std-header nav {
+    float: right;
+}
+
+.ks-std-header nav a {
+    color: #aaa;
+    font-weight: 700;
+    margin: 0 0 0 20px;
+    font-size: 1.4em;
+}
+
+.ks-std-header nav a:hover {
+    color: #333;
+}
+
+/*  Transitions  */
+.ks-std-header h1,
+.ks-std-header nav a {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.ks-std-header.ks-std-header-shrink {
+    height: 90px;
+}
+
+.ks-std-header.ks-std-header-shrink h1,
+.ks-std-header.ks-std-header-shrink nav a {
+    line-height: 90px;
+}
+
+.ks-std-header.ks-std-header-shrink h1 {
+    font-size: 2em;
+}
+
+/*  Media Queries   */
+@media screen and ( max-width: 55em) {
+    .ks-std-header .ks-std-inner {
+        width: 100%;
+    }
+
+    .ks-std-header h1,
+    .ks-std-header nav {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        float: none;
+    }
+
+    .ks-std-header h1,
+    .ks-std-header nav a {
+        line-height: 115px;
+    }
+
+    .ks-std-header nav a {
+        margin: 0 10px;
+    }
+
+    .ks-std-header.ks-std-header-shrink h1,
+    .ks-std-header.ks-std-header-shrink nav a {
+        line-height: 45px;
+    }
+
+    .ks-std-header.ks-std-header-shrink h1 {
+        font-size: 2em;
+    }
+
+    .ks-std-header.ks-std-header-shrink nav a {
+        font-size: 1em;
+    }
+}
+
+@media screen and ( max-width: 32.25em ) {
+    .ks-std-header nav a {
+        font-size: 1em;
+    }
+}
+
+@media screen and ( max-width: 24em) {
+    .ks-std-header nav a,
+    .ks-std-header.ks-std-header-shrink nav a {
+        line-height: 1;
+    }
+}
+
+/****************************************
+* Primary Navigation                    *
+ ****************************************/
+
+/****************************************
+* Footer                                *
+ ****************************************/
+
+/****************************************
+* Header                                *
+ ****************************************/
+
+/****************************************
+* Social Icons                          *
+ ****************************************/
+
+/****************************************
+* Buttons                               *
+ ****************************************/
+
+/****************************************
+* Forms                                 *
+ ****************************************/
+
+/****************************************
+* Homepage                              *
+ ****************************************/
+
+/****************************************
+* Sidebar Nav                           *
+ ****************************************/
+
+/****************************************
+* Login/Signup                          *
+ ****************************************/

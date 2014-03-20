@@ -1,0 +1,85 @@
+/**
+* top-level page transitions ng-view
+*/
+.ks-animate-container {
+  position: relative;
+  height: 100% !important;
+  background: white;
+  overflow: hidden;
+}
+
+.ks-view-animate {
+  padding: 10px;
+
+  &.ng-enter, .ng-leave {
+    -webkit-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+    transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+
+    display: block;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+  }
+
+  &.ng-enter {
+    left: 100% !important;
+
+    &.ng-enter-active {
+      left: 0 !important;
+    }
+  }
+
+  &.ng-leave {
+    left: -100% !important;
+
+    &.ng-leave-active {
+      left: -100% !important;
+    }
+  }
+
+}
+
+//.ks-page-enter-left, .ks-page-enter-right, .ks-page-leave-left, .ks-page-leave-right {
+//  -webkit-transition: all liner 0.3s;
+//  position: absolute;
+//}
+//
+//.ks-page-enter-left {
+//  left: -100% !important;
+//  right: auto !important;
+//
+//  &.ks-page-enter-left-active {
+//    left: 0 !important;
+//    right: auto !important;
+//  }
+//}
+//
+//.ks-page-leave-right, .ks-page-leave-left {
+//  left: 0 !important;
+//  right: auto !important;
+//
+//  &.ks-page-leave-right-active {
+//    left: 100% !important;
+//    right: auto !important;
+//  }
+//
+//  &.ks-page-leave-left-active {
+//    left: -100% !important;
+//    right: auto !important;
+//  }
+//}
+//
+//.ks-page-enter-right {
+//  left: 100% !important;
+//  right: auto !important;
+//
+//  &.ks-page-enter-right-active {
+//    left: 0 !important;
+//    right: auto !important;
+//  }
+//}

@@ -1,0 +1,21 @@
+// List Icons
+
+.@{ks-css-prefix}-ul {
+  padding-left: 0;
+  margin-left: @ks-li-width;
+  list-style-type: none;
+  > li {
+    position: relative;
+  }
+}
+
+.@{ks-css-prefix}-li {
+  position: absolute;
+  left: -@ks-li-width;
+  width: @ks-li-width;
+  top: (2em / 14);
+  text-align: center;
+  &.@{ks-css-prefix}-lg {
+    left: -@ks-li-width + (4em / 14);
+  }
+}

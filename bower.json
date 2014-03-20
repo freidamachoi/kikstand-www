@@ -1,0 +1,52 @@
+{
+  "name": "Kikstand Inc Website",
+  "dependencies": {
+    "angular": "1.3.0-build.2480+sha.fb6062f",
+    "angular-animate": "1.3.0-build.2480+sha.fb6062f",
+    "angular-cookies": "1.3.0-build.2480+sha.fb6062f",
+    "angular-motion": "latest",
+    "angular-resource": "1.3.0-build.2480+sha.fb6062f",
+    "angular-route": "1.3.0-build.2480+sha.fb6062f",
+    "angular-sanitize": "latest",
+    "angular-strap": "2.0.0-rc.4",
+    "angular-touch": "latest",
+    "angular-ui-bootstrap-bower": "latest",
+    "angularfire": "latest",
+    "angularGeoFire": "latest",
+    "animate.css": "*",
+    "bootstrap": "latest",
+    "es5-shim": "latest",
+    "firebase": "latest",
+    "font-awesome": "latest",
+    "geofire": "https://github.com/firebase/geoFire.git#gh-pages",
+    "jquery": "latest",
+    "json3": "latest",
+    "lodash": "latest"
+  },
+  "devDependencies": {
+    "angular-mocks": "latest",
+    "angular-scenario": "latest",
+    "holderjs": "latest",
+    "jasmine": "latest"
+  },
+  "exportsOverride": {
+    "angular-strap": {
+      "js": "dist/*.*"
+    },
+    "bootstrap": {
+      "fonts": "dist/fonts/glyphicons-halflings*.*",
+      "less": "less/*.less"
+    },
+    "font-awesome": {
+      "fonts": "fonts/*.*",
+      "less": "less/*.less"
+    },
+    "geofire": {
+      "js": "geoFire.js"
+    }
+  },
+  "resolutions": {
+    "angular": ">= 1.2.0",
+    "angular-animate": "1.3.0-build.2480+sha.fb6062f"
+  }
+}
